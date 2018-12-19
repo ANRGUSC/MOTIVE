@@ -1,0 +1,15 @@
+{
+    "object_detection": ["pillar", "human", "traffic_light"],
+    "speed_recommendation": {
+        "i-5":"30mph",
+        "sr-20":"60mph"
+    },
+    "toll_payment": {
+        "i-5":4.53,
+        "sr-20":10.81
+    },
+    "fastrak": {
+        "i-5":2.77,
+        "sr-20":1.43
+    }
+}

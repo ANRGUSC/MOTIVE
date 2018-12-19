@@ -1,0 +1,18 @@
+{
+    "traffic_data": {
+        "s_figueroa_st":"heavy",
+        "us101":"standstill",
+        "i-95":"moderate"
+    },
+    "points_of_interests": ["taco bell", "starbucks", "7-eleven"],
+    "fuel_prices": {
+        "76":[3.89, 3.99, 4.09],
+        "arco":[3.79, 3.89, 3.99],
+        "chevron":[3.19, 3.29, 3.39]
+    },
+    "parking_information": {
+        "shrine auditorium":627, 
+        "32nd":1142,
+        "alvarado":7
+    }
+}
