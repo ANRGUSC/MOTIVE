@@ -11,7 +11,7 @@ web3.eth.defaultAccount = account.address;
 
 var rating_from = "DL3CAP5424" // DL of the rater
 var rating_to = "DL3CAP5426"; // DL of the person to be rated
-var rating = 3 // rating from 0-5
+var rating = 4 // rating from 0-5
 
 contract.methods.addRating(rating_from , rating_to , rating).send({
     from:account.address,
