@@ -4,10 +4,10 @@
 
 2. AddRating
 -> can be used to add rating for a driver's licence number , accepts three parameters :
-1. Licence number of the user who is rating
-2. Licence nummber of the user to be rated
-3. Rating from 0-5
+#Licence number of the user who is rating
+#Licence nummber of the user to be rated
+#Rating from 0-5
 
 3. GetRating
 -> can be used to return the rating for a particular licence number , accepts one parameter:
-1. Licence number of the user whose rating is to be fetched.
+#Licence number of the user whose rating is to be fetched.
