@@ -1,0 +1,81 @@
+<div class="jumbotron">
+  <p>Connected To DL3CAP5426</p>
+  {{# each pos}}
+  <span class="fa fa-star checked"></span>
+  {{/each}}
+  {{# each neg}}
+  <span class="fa fa-star"></span>
+  {{/each}}
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Services Provided By Me</h3>
+  </div>
+  <div class="panel-body">
+    <div class="list-group">
+    <a href="#" class="list-group-item active">
+    <h4 class="list-group-item-heading">Traffic Data</h4>
+    <p class="list-group-item-text">Contains Traffic Details of the journey from Downtown Los Angeles to Long Beach</p>
+  </a>
+</div>
+<div class="list-group">
+<a href="#" class="list-group-item active">
+<h4 class="list-group-item-heading">Food Stop Information</h4>
+<p class="list-group-item-text">Contains food outlets in the jounrey from Downtown Los Angeles to Long Beach</p>
+</a>
+</div>
+  </div>
+</div>
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Services Provided By DL3CAP5426</h3>
+  </div>
+  <div class="panel-body">
+    <div class="list-group">
+    <a href="/sendingB" onclick="window.open('/receiveA');"class="list-group-item">
+    <h4 class="list-group-item-heading">Electric Vehicle Charge Point Data</h4>
+    <p class="list-group-item-text">Contrains Data for nearest electric vehice charging stations in the Downtown Los Angeles Area</p>
+  </a>
+</div>
+<div class="list-group">
+<a href="/sendingB" onclick="window.open('/receiveA');" class="list-group-item">
+<h4 class="list-group-item-heading">Accident Data</h4>
+<p class="list-group-item-text">Contains nearby accident details on the Freeway 32 Santa Monica Expressway</p>
+</a>
+</div>
+  </div>
+</div>
+
+<div class="panel panel-warning">
+  <div class="panel-heading">
+    <h3 class="panel-title">Scheduling Information</h3>
+  </div>
+  <div class="panel-body">
+    <div class="well well-sm">Currently Scheduling : Traffic Data</div>
+    <div class="progress">
+  <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100" style="width: 82%">
+    <span>CPU</span>
+  </div>
+</div>
+<div class="progress">
+<div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 27%">
+  <span>Memory</span>
+</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 57%">
+  <span>Disk</span>
+</div>
+</div>
+
+<div class="progress">
+<div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" aria-valuenow="77" aria-valuemin="0" aria-valuemax="100" style="width: 30%">
+  <span>Network</span>
+</div>
+</div>
+  </div>
+</div>

@@ -1,0 +1,91 @@
+<div class="jumbotron">
+  <h1>Link Prediction Starts!</h1>
+  <p>Hold Back Tight While Our Algorithms Predict The Link Duration Of Your Connection!</p>
+
+  <div class="progress">
+    <div id="dynamic" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+      <span id="current-progress"></span>
+    </div>
+  </div>
+
+  <div class="progress">
+    <div id="dynamic1" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+      <span id="current-progress"></span>
+    </div>
+  </div>
+
+  <div class="progress">
+    <div id="dynamic2" class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+      <span id="current-progress"></span>
+    </div>
+  </div>
+
+<p class = "hide" id = "link" >Link duration is predicted to be {{link_duration}} seconds</p>
+</div>
+
+<script>
+$(function() {
+var current_progress = 0;
+var interval = setInterval(function() {
+    current_progress += 10;
+    $("#dynamic")
+    .css("width", current_progress + "%")
+    .attr("aria-valuenow", current_progress)
+    .text("Gathering Navigation Speed!");
+    if (current_progress >= 100)
+        clearInterval(interval);
+}, 1000);
+});
+</script>
+
+<script>
+  var timeout = 10000;
+
+  setTimeout(function () {
+    $(function() {
+    var current_progress = 0;
+    var interval = setInterval(function() {
+        current_progress += 10;
+        $("#dynamic1")
+        .css("width", current_progress + "%")
+        .attr("aria-valuenow", current_progress)
+        .text("Gathering Distance Information!");
+        if (current_progress >= 100)
+            clearInterval(interval);
+    }, 1000);
+    });
+  }, timeout);
+</script>
+
+<script>
+  var timeout = 20000;
+
+  setTimeout(function () {
+    $(function() {
+    var current_progress = 0;
+    var interval = setInterval(function() {
+        current_progress += 10;
+        $("#dynamic2")
+        .css("width", current_progress + "%")
+        .attr("aria-valuenow", current_progress)
+        .text("Getting Rating Parameters!");
+        if (current_progress >= 100)
+            clearInterval(interval);
+    }, 1000);
+    });
+  }, timeout);
+</script>
+
+<script>
+setTimeout(function(){
+ document.getElementById('link').classList.remove('hide');
+}, 32000);
+</script>
+
+
+<script>
+  var timeout = 35000;
+  setTimeout(function () {
+     window.location = "/dashboardB";
+  }, timeout);
+</script>
