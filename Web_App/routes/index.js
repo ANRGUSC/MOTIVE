@@ -6,9 +6,29 @@ const keys = require('../config/keys');
 
 /* GET home page. */
 
+var balanceA;
+var balanceB;
+
+function bal(address) {
+  let balance = web3.eth.getBalance(address);
+  return balance;
+}
 const account = web3.eth.accounts.privateKeyToAccount('0xE8B03DE7D420DB4164D02D143548E81CB8D2F898E38E9A0629AD47ED89770AF8');
 web3.eth.accounts.wallet.add(account);
 web3.eth.defaultAccount = account.address;
+bal(account.address).then(function(result){
+  //console.log(web3.utils.fromWei(result , 'ether'));
+  balanceA = web3.utils.fromWei(result , 'ether');
+});
+
+const account2 = web3.eth.accounts.privateKeyToAccount('0xC89ADA337DCDD9D9D092D582104064554DDC3A835B0D164B82E304F0DFC5F0FC');
+web3.eth.accounts.wallet.add(account2);
+bal(account2.address).then(function(result){
+  //console.log(web3.utils.fromWei(result , 'ether'));
+  balanceB = web3.utils.fromWei(result , 'ether');
+});
+
+
 var driver1 = "DL3CAP5424";
 var driver2 = "DL3CAP5426";
 var posratingA = [];
@@ -49,22 +69,29 @@ router.get('/linkpredictB' , function(req , res) {
 });
 
 router.get('/dashboardA' , function(req , res) {
+  console.log(balanceA);
+  console.log(balanceB);
+  posratingA.length = 0;
+  negratingA.length = 0;
   contract.methods.getIntegerRating(driver1).call().then(function(result){
   //console.log(result[0]);
   curratingA = result[0];
+  console.log(curratingA);
   for(var i = 0; i<curratingA; i++){
     posratingA.push(i);
   }
   for(var i =0; i<5-curratingA; i++) {
     negratingA.push(i);
   }
-  res.render('dashboardA' , {pos : posratingA , neg:negratingA});
+  res.render('dashboardA' , {pos : posratingA , neg:negratingA , balance : balanceA});
   console.log(posratingA);
   console.log(negratingA);
 });
 });
 
 router.get('/dashboardB' , function(req , res) {
+  posratingB.length = 0;
+  negratingB.length = 0;
   contract.methods.getIntegerRating(driver2).call().then(function(result){
   console.log(result[0]);
   curratingB = result[0];
@@ -74,7 +101,7 @@ router.get('/dashboardB' , function(req , res) {
   for(var i =0; i<5-curratingB; i++) {
     negratingB.push(i);
   }
-  res.render('dashboardB' , {pos : posratingB , neg:negratingB});
+  res.render('dashboardB' , {pos : posratingB , neg:negratingB , balance : balanceB});
   console.log(posratingB);
   console.log(negratingB);
 });
@@ -82,6 +109,14 @@ router.get('/dashboardB' , function(req , res) {
 
 router.get('/sendingA' , function(req , res) {
   res.render('sendingA');
+  web3.eth.sendTransaction({
+    from: account.address ,
+    to: account2.address,
+    value: '500000000000000000',
+    gas: 2000000
+  }).then(function(res){
+    console.log(res);
+  });
 });
 
 router.get('/receiveB' , function(req , res) {
@@ -90,6 +125,14 @@ router.get('/receiveB' , function(req , res) {
 
 router.get('/sendingB' , function(req , res) {
   res.render('sendingB');
+  web3.eth.sendTransaction({
+    from: account2.address ,
+    to: account.address,
+    value: '500000000000000000',
+    gas: 2000000
+  }).then(function(res){
+    console.log(res);
+  });
 });
 
 router.get('/receiveA' , function(req , res) {
