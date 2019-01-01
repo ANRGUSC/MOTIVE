@@ -119,6 +119,18 @@ router.get('/sendingA' , function(req , res) {
   });
 });
 
+router.get('/download' , function(req,res) {
+  var file = __dirname + '/data.json';
+  res.download(file, function(err){
+  if(err) {
+    if(res.headersSent) {
+    } else {
+      return res.sendStatus(404);
+    }
+  }
+});
+});
+
 router.get('/receiveB' , function(req , res) {
   res.render('receiveB');
 });
