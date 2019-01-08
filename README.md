@@ -1,5 +1,7 @@
 # MOTIVE: Micropayments fOr Trusted vehIcular serVicEs
 
+Motive is a framework that can be used to build applications that allow vehicles to exchange payment for data and compute services. It has been developed at the USC Viterbi CCI & ANRG.
+
 ## Motivation
 Increasingly connected cars are becoming a decentralized data platform. With greater autonomy, they have growing needs for computation and perceiving the world around them through sensors. While today’s generation of vehicle carry all the needed sensor data and computation on-board each vehicle, we envision a future where vehicles can cooperate with each other to increase their perception of the world beyond their own immediate view, resulting in greater safety, coordination and a more comfortable experience for their human occupants.
 ## Problem
