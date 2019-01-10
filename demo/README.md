@@ -9,8 +9,8 @@ Preparing Windows environment to run MOTIVE simulator.
 - Internet connection required for blockchain transactions
 - First runtime may trigger Windows Firewall Alert, it is safe to allow the connection**
 
-* Tested on Windows 7 x64 and Windows 10 x64 1703/1803.
-** Application name dependent, changing application name will trigger a new alert.
+    * Tested on Windows 7 x64 and Windows 10 x64 1703/1803.
+    ** Application name dependent, changing application name will trigger a new alert.
 
 ## Preparing
 
@@ -25,8 +25,8 @@ Do not move or remove `app.exe`, `/node_modules` and its subdirectory contents.
 Configuration parameters will be presented for modification upon launching application.
 
 Value limitations:
-- Timer until a vehicle comes in range: 	1s to 10s 	(Default: 10s)
-- Timer until a vehicle goes out of range: 	30s to 150s (Default: 150s)
+- Timer until a vehicle comes in range: 1s to 10s (Default: 10s)
+- Timer until a vehicle goes out of range: 30s to 150s (Default: 150s)
 
 ## Usage
 
@@ -72,7 +72,7 @@ app.exe not found in .\
 ## 	Additional Information
 
 - `app.exe` needs to be under the same `./` directory as `MOTIVE.exe`.
-- Files under `/node_modules` is required to launch `MOTIVE.exe`. 
+- Files under `/node_modules` is required to run `MOTIVE.exe`. 
 - Display scaling settings may affect size of text and contents.
 
 v1.0
