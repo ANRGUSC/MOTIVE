@@ -9,8 +9,8 @@ Preparing Windows environment to run MOTIVE simulator.
 - Internet connection required for blockchain transactions
 - First runtime may trigger Windows Firewall Alert, it is safe to allow the connection**
 
-    * Tested on Windows 7 x64 and Windows 10 x64 1703/1803.
-    ** Application name dependent, changing application name will trigger a new alert.
+\* Tested on Windows 7 x64 and Windows 10 x64 1703/1803.
+\*\* Application name dependent, changing application name will trigger a new alert.
 
 ## Preparing
 
