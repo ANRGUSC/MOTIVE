@@ -1,15 +1,15 @@
 Copyright (c) 2018, Autonomous Networks Research Group. All rights reserved.
 
 Developed by:
-Autonomous Networks Research Group (ANRG)
+USC Viterbi Center for Cyber-Physical Systems and the Internet of Things (CCI) and Autonomous Networks Research Group (ANRG)
 University of Southern California
 http://anrg.usc.edu/
 
 Contributors:
-* Rahul Radhakrishnan
-* Tianbo Zong
+* Xiang Ji
 * Pavas Navaney
-* Winny Huang
+* Licheng Zheng
+* Martin Espinoza
 * Gowri Sankar Ramachandran
 * Bhaskar Krishnamachari
 
