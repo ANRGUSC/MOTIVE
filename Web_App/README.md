@@ -17,7 +17,7 @@ npm install web3
 2. Open browser and type `localhost:3000` to go to Home Page.
 
 ## Toggle Ethereum Accounts
-If you want to use another Metamask/Ethereum account linked to your Dashboard :
+1.If you want to use another Metamask/Ethereum account linked to your Dashboard :
 `routes\index.js`
-Change the private key to the account by changing:
+2.Change the private key to the account by changing:
 `const account = web3.eth.accounts.privateKeyToAccount('--YOUR_INFURA_KEY--');`
