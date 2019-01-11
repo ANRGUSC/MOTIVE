@@ -1,3 +1,6 @@
+# Web App
+Preparing Node.js environment to run MOTIVE Web App.
+
 ## Requirements
 Tested with `Node.js v8.x+`.
 
