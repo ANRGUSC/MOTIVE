@@ -8,7 +8,7 @@ Motive is a framework that can be used to build applications that allow vehicles
 A [video demonstration of MOTIVE](https://www.youtube.com/watch?v=qBkDRzxOUrA&feature=youtu.be)
 
 ## More Reading
-* “[MOTIVE: Micropayments fOr Trusted vehIcular serVicEs](https://github.com/ANRGUSC/DDM/blob/master/documents/ddm.pdf)”. 
+* “[MOTIVE: Micropayments fOr Trusted vehIcular serVicEs](/documents/Motive.pdf)”. 
 
 ## Motivation
 Increasingly connected cars are becoming a decentralized data platform. With greater autonomy, they have growing needs for computation and perceiving the world around them through sensors. While today’s generation of vehicle carry all the needed sensor data and computation on-board each vehicle, we envision a future where vehicles can cooperate with each other to increase their perception of the world beyond their own immediate view, resulting in greater safety, coordination and a more comfortable experience for their human occupants.
