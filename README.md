@@ -4,8 +4,6 @@ Motive is a framework that can be used to build applications that allow vehicles
 
 ![MOTIVE Architecture illustration](/documents/Motive-architecture-full.png)
 
-This is version 1.0, DDM is still under development. The current prototype does not implement ratings, curated recommendations, or sophisticated search mechanisms, these are left to future versions.
-
 ## Video Demo
 A [video demonstration of MOTIVE](https://www.youtube.com/watch?v=qBkDRzxOUrA&feature=youtu.be)
 
