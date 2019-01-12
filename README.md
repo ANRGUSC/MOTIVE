@@ -5,7 +5,9 @@ Motive is a framework that can be used to build applications that allow vehicles
 ![MOTIVE Architecture illustration](/documents/Motive-architecture-full.png)
 
 ## Video Demo
-A [video demonstration of MOTIVE](https://www.youtube.com/watch?v=qBkDRzxOUrA&feature=youtu.be)
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=qBkDRzxOUrA
+" target="_blank"><img src="http://img.youtube.com/vi/qBkDRzxOUrA/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## More Reading
 * “[MOTIVE: Micropayments fOr Trusted vehIcular serVicEs](/documents/Motive.pdf)”. 
