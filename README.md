@@ -2,6 +2,16 @@
 
 Motive is a framework that can be used to build applications that allow vehicles to exchange payment for data and compute services. It has been developed at the USC Viterbi CCI & ANRG.
 
+![MOTIVE Architecture illustration](https://raw.githubusercontent.com/ANRGUSC/DDM/master/documents/DDM_architecture.png?token=ATzSjrIar8iUxdPSGEvcGN4Gghhg_nLyks5bqpLZwA%3D%3D)
+
+This is version 1.0, DDM is still under development. The current prototype does not implement ratings, curated recommendations, or sophisticated search mechanisms, these are left to future versions.
+
+## Video Demo
+A [video demonstration of MOTIVE](https://www.youtube.com/watch?v=qBkDRzxOUrA&feature=youtu.be)
+
+## More Reading
+* “[MOTIVE: Micropayments fOr Trusted vehIcular serVicEs](https://github.com/ANRGUSC/DDM/blob/master/documents/ddm.pdf)”. 
+
 ## Motivation
 Increasingly connected cars are becoming a decentralized data platform. With greater autonomy, they have growing needs for computation and perceiving the world around them through sensors. While today’s generation of vehicle carry all the needed sensor data and computation on-board each vehicle, we envision a future where vehicles can cooperate with each other to increase their perception of the world beyond their own immediate view, resulting in greater safety, coordination and a more comfortable experience for their human occupants.
 ## Problem
