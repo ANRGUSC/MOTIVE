@@ -18,4 +18,4 @@ In order for vehicles to obtain data, compute and other services from other vehi
 The key components of MOTIVE include beaconing, link prediction, scheduling, payment, and ratings. We implemented the beaconing functionality using WiFi's AdHoc feature. Whenever a MOTIVE device comes in contact with another MOTIVE device, the devices establish a link and exchange the provided and required services. The ratings smart contract in Ethereum, which consists of three functions to add a new user to the MOTIVE eco-system, get the rating of an existing user, and rate an user after a transaction. We implemented a client application for handling the \textbf{payment and recording} the transactions using Ethereum and Web3.
 
 ## License
-Copyright (c) 2019, USC Viterbi Center for Cyber-Physical Systems and Internet of Things (CCI) and Autonomous Networks Research Group (ANRG), USC. See [this](https://github.com/ANRGUSC/DDM/blob/master/LICENSE.txt) file for more details.
+Copyright (c) 2019, USC Viterbi Center for Cyber-Physical Systems and Internet of Things (CCI) and Autonomous Networks Research Group (ANRG), USC. See [this](LICENSE.txt) file for more details.
