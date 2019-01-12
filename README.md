@@ -22,11 +22,12 @@ The key components of MOTIVE include beaconing, link prediction, scheduling, pay
 ## Folder Summary
 We maintain the software and the demonstration of MOTIVE in different folders. The following list provides a high-level summary of the different folders.
 
-* demo: This folder maintains the stand-alone demonstration application developed for the Windows environment. The instructions for running the demonstration is available inside the folder.
-* documents: This folder consists of the technical documents explaining the architecture and the research challenges involved in the implementation of MOTIVE.
+* [demo](/demo/): This folder maintains the stand-alone demonstration application developed for the Windows environment. The instructions for running the demonstration is available inside the folder.
+* [documents](/documents/): This folder consists of the technical documents explaining the architecture and the research challenges involved in the implementation of MOTIVE.
 * [beaconing](/beaconing/): This folder includes the beaconing software developed using WiFi's AdHoc mode. 
-* payment-and-rating: The payment and rating functionalities are implemented using Ethereum and Solidity. This folder consists of the smart contract and the Web3 client library for adding users along with modules for updating and querying the rating of users.
-* web-app: This folder contains the code for web frontend. We recommend the users to try MOTIVE using the Windows application.
+* [rating](/rating/): The rating functionalities are implemented using Ethereum and Solidity. This folder consists of the smart contract and the Web3 client library for adding users along with modules for updating and querying the rating of users.
+* [payment-and-record](/payment-and-record/): This folder consists of the payment and record modules developed for IOTA.
+* [web-app](/web-app/): This folder contains the code for web frontend. We recommend the users to try MOTIVE using the Windows application.
 
 ## License
 Copyright (c) 2019, USC Viterbi Center for Cyber-Physical Systems and Internet of Things (CCI) and Autonomous Networks Research Group (ANRG), USC. See [this](LICENSE.txt) file for more details.
