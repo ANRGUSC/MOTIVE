@@ -8,7 +8,7 @@ MOTIVE consists of the following key components:
 * Link Prediction: To estimate how long the two MOTIVE devices (vehicles) will stay in contact with each other.
 * Scheduling: For allocating the resources needed to provide and consume the data and compute services.
 * Payment and Record: To pay for the services consumed and to record the transactions for verification purposes.
-* Rating: To rate other MOTIVE devices (vehicles)
+* Rating: To rate other MOTIVE devices (vehicles).
 
 The beaconing implementation was carried out using WiFi's AdHoc mode (see [beaconing](../beaconing/)). In the demonstration, we configure the time when the vehicle will come in range since the demo of beaconing requires two MOTIVE devices. Next, the link prediction functionality is demonstrated through the configuration parameter, which determines how long the two vehicles will stay in contact with each other. Subsequently, the scheduling of EV_CHARGING_INFO service is illustrated using a simple FIFO scheduler. Next, the payment and recording of transactions are carried out using Ethereum Ropsten testnet. Lastly, the rating functionality is demonstrated using Ethereum Smart Contract deployed at Ethereum Ropsten testnet. Note that MOTIVE is agnostic to distributed ledger technology and the V2X communication system. 
 
