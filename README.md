@@ -2,7 +2,7 @@
 
 Motive is a framework that can be used to build applications that allow vehicles to exchange payment for data and compute services. It has been developed at the USC Viterbi CCI & ANRG.
 
-![MOTIVE Architecture illustration](https://raw.githubusercontent.com/ANRGUSC/DDM/master/documents/DDM_architecture.png?token=ATzSjrIar8iUxdPSGEvcGN4Gghhg_nLyks5bqpLZwA%3D%3D)
+![MOTIVE Architecture illustration](MOTIVE/documents/Motive-architecture-full.png)
 
 This is version 1.0, DDM is still under development. The current prototype does not implement ratings, curated recommendations, or sophisticated search mechanisms, these are left to future versions.
 
