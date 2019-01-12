@@ -10,7 +10,8 @@ Preparing Windows environment to run MOTIVE simulator.
 - First runtime may trigger Windows Firewall Alert, it is safe to allow the connection**
 
 \* Tested on Windows 7 x64 and Windows 10 x64 1703/1803.
-\*\* Application name dependent, changing application name will trigger a new alert.
+
+\*\* Application name dependent. Changing application name will trigger a new alert.
 
 ## Preparing
 
@@ -18,11 +19,13 @@ Using `git` or your Git version control system:
 
 `git clone https://github.com/ANRGUSC/MOTIVE/`
 
+Alternatively, download the `*.zip` archive at `Clone or download > Download ZIP` on GitHub.com and decompress it.
+
 Do not move or remove `app.exe`, `/node_modules` and its subdirectory contents.
 
 ## Configuration
 
-Configuration parameters will be presented for modification upon launching application.
+Configuration parameters will be presented for modification upon launching the application.
 
 Value limitations:
 - Timer until a vehicle comes in range: 1s to 10s (Default: 10s)
@@ -54,7 +57,7 @@ Error: Cannot find module './build/Release/scrypt'
 ...
 ```
 
-`node_modules` or its subdirectory contents is moved or removed. Please clone the repository again.
+`node_modules` or its subdirectory contents is moved or removed. Please clone or download the repository again.
 
 ```
 ...
@@ -67,7 +70,7 @@ No Internet connection. Please check for Internet connectivity and if MOTIVE.exe
 app.exe not found in .\
 ```
 
-`app.exe` moved or removed. Please clone the repository again.
+`app.exe` moved or removed. Please clone or download the repository again.
 
 ## 	Additional Information
 
