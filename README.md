@@ -1,6 +1,6 @@
 # MOTIVE: Micropayments fOr Trusted vehIcular serVicEs
 
-Motive is a framework that can be used to build applications that allow vehicles to exchange payment for data and compute services. It has been developed at the USC Viterbi CCI & ANRG.
+Motive is a framework that can be used to build applications that allow vehicles to exchange payment for data and compute services. It has been developed at the USC Viterbi Center for Cyber-Physical Systems and Internet of Things (CCI) & Autonomous Networks Research Group (ANRG).
 
 ![MOTIVE Architecture illustration](/documents/Motive-architecture-full.png)
 
