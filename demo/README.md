@@ -2,6 +2,16 @@
 
 Preparing Windows environment to run MOTIVE simulator.
 
+## Functionalities Demonstrated
+MOTIVE consists of the following key components:
+* Beaconing: For identifying other MOTIVE devices.
+* Link Prediction: To estimate how long the two MOTIVE devices (vehicles) will stay in contact with each other.
+* Scheduling: For allocating the resources needed to provide and consume the data and compute services.
+* Payment and Record: To pay for the services consumed and to record the transactions for verifiction purposes.
+* Rating: To rate other MOTIVE devices (vehicles)
+
+The beaconing implementation was carried out using WiFi's AdHoc mode (see [beaconing](../beaconing/)).
+
 ## Prerequisites
 
 - .NET Framework 4.6 Runtime (Preinstalled on Windows 10 and above)
