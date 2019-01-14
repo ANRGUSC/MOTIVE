@@ -1,32 +1,17 @@
 # Demo App
 
-Preparing a Windows environment to run the MOTIVE simulator.
-
-## Functionalities Demonstrated
-MOTIVE consists of the following key components:
-* Beaconing: For identifying other MOTIVE devices.
-* Link Prediction: To estimate how long the two MOTIVE devices (vehicles) will stay in contact with each other.
-* Scheduling: For allocating the resources needed to provide and consume the data and compute services.
-* Payment and Record: To pay for the services consumed and to record the transactions for verification purposes.
-* Rating: To rate other MOTIVE devices (vehicles).
-
-The beaconing implementation was carried out using WiFi's AdHoc mode (see [beaconing](../beaconing/)). In the demonstration, we configure the time when the vehicle will come in range since the demo of beaconing requires two MOTIVE devices. Next, the link prediction functionality is demonstrated through the configuration parameter, which determines how long the two vehicles will stay in contact with each other. Subsequently, the scheduling of EV_CHARGING_INFO service is illustrated using a simple FIFO scheduler. Next, the payment and recording of transactions are carried out using Ethereum Ropsten testnet. Lastly, the rating functionality is demonstrated using Ethereum Smart Contract deployed at Ethereum Ropsten testnet ((see [rating](../rating/)). Note that MOTIVE is agnostic to distributed ledger technology and the V2X communication system. 
-
-* [Rating Smart Contract at Ropsten Testnet](https://ropsten.etherscan.io/address/0xab0defc61a0e795985c432b46bb5e9a895a67399)
-* [Local Vehicle Address](https://ropsten.etherscan.io/address/0x32590BB72050e53df34676f9A75c17A0677866c7)
-* [Remote Vehicle Address](https://ropsten.etherscan.io/address/0x1b87cd9c9c12a931958c114c9b6c257263e8a04e)
-
+Preparing Windows environment to run MOTIVE simulator.
 
 ## Prerequisites
 
 - .NET Framework 4.6 Runtime (Preinstalled on Windows 10 and above)
 - Microsoft Windows x64, Vista and above*
 - Internet connection required for blockchain transactions
-- First runtime may trigger Windows Firewall Alert, and it is safe to allow the connection**
+- First runtime may trigger Windows Firewall Alert, it is safe to allow the connection**
 
 \* Tested on Windows 7 x64 and Windows 10 x64 1703/1803.
 
-\*\* Application name dependent. Changing the application name will trigger a new alert.
+\*\* Application name dependent. Changing application name will trigger a new alert.
 
 ## Preparing
 
@@ -48,7 +33,7 @@ Value limitations:
 
 ## Usage
 
-Run `MOTIVE.exe`, not `app.exe`, otherwise, the demo cannot advance.
+Run `MOTIVE.exe`, not `app.exe`, otherwise the demo cannot advance.
 
 ### GUI
 
@@ -87,10 +72,10 @@ app.exe not found in .\
 
 `app.exe` moved or removed. Please clone or download the repository again.
 
-##     Additional Information
+## 	Additional Information
 
 - `app.exe` needs to be under the same `./` directory as `MOTIVE.exe`.
 - Files under `/node_modules` is required to run `MOTIVE.exe`. 
-- Display scaling settings may affect the size of text and contents.
+- Display scaling settings may affect size of text and contents.
 
 v1.0
