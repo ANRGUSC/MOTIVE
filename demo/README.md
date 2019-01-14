@@ -75,7 +75,7 @@ app.exe not found in .\
 ## 	Additional Information
 
 - `app.exe` needs to be under the same `./` directory as `MOTIVE.exe`.
-- Files under `/node_modules` is required to run `MOTIVE.exe`. 
+- Files under `/node_modules` are required to run `MOTIVE.exe`. 
 - Display scaling settings may affect size of text and contents.
 
 v1.0
