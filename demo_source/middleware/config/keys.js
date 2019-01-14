@@ -1,0 +1,5 @@
+module.exports = {
+  HTTP_SERVER : '(REDACTED)',
+  DEFAULT_ACCOUNT : '(REDACTED)',
+  CONTRACT_ADDRESS : '(REDACTED)'
+}

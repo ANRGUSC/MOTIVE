@@ -23,6 +23,7 @@ The key components of MOTIVE include beaconing, link prediction, scheduling, pay
 We maintain the software and the demonstration of MOTIVE in different folders. The following list provides a high-level summary of the different folders.
 
 * **[DEMO](/demo/): This folder maintains the stand-alone demonstration application developed for the Windows environment.**
+* [demo_source](/demo_source/): This folder contains source codes used to build the demo applications.
 * [documents](/documents/): This folder consists of the technical documents explaining the architecture and the research challenges involved in the implementation of MOTIVE.
 * [beaconing](/beaconing/): This folder includes the beaconing software developed using WiFi's AdHoc mode. 
 * [rating](/rating/): The rating functionalities are implemented using Ethereum and Solidity. This folder consists of the smart contract and the Web3 client library for adding users along with modules for updating and querying the rating of users.

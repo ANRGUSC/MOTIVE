@@ -3,6 +3,7 @@
 Preparing a Windows environment to run the MOTIVE simulator.
 
 ## Functionalities Demonstrated
+
 MOTIVE consists of the following key components:
 * Beaconing: For identifying other MOTIVE devices.
 * Link Prediction: To estimate how long the two MOTIVE devices (vehicles) will stay in contact with each other.
@@ -90,7 +91,7 @@ app.exe not found in .\
 ##     Additional Information
 
 - `app.exe` needs to be under the same `./` directory as `MOTIVE.exe`.
-- Files under `/node_modules` is required to run `MOTIVE.exe`. 
+- Files under `/node_modules` are required to run `MOTIVE.exe`. 
 - Display scaling settings may affect the size of text and contents.
 
-v1.0
+v1.1

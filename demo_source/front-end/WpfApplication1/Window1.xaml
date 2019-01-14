@@ -1,0 +1,54 @@
+﻿<Window x:Name="win1_main_window" x:Class="WpfApplication1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MOTIVE - Local Vehicle" Width="640" ResizeMode="NoResize" Closing="win1_main_window_Closing" SizeToContent="WidthAndHeight">
+    <Grid x:Name="win1_main_grid" Background="#FFE4E4E4">
+        <Grid x:Name="win1_status_grid" HorizontalAlignment="Center" Height="120" Margin="10,320,10,10" VerticalAlignment="Bottom" Width="614">
+            <GroupBox x:Name="win1_status_groupbox" Header="My Status" HorizontalAlignment="Center" Height="100" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="594">
+                <Grid x:Name="win1_status_groupbox_grid" HorizontalAlignment="Left" Height="84" Margin="0,0,-3.2,-5.6" VerticalAlignment="Top" Width="584">
+                    <GridSplitter x:Name="win1_status_groupbox_grid_separator1" HorizontalAlignment="Left" Height="84" Margin="146,0,0,0" VerticalAlignment="Top" Width="5"/>
+                    <GridSplitter x:Name="win1_status_groupbox_grid_separator2" HorizontalAlignment="Left" Height="84" Margin="292,0,0,0" VerticalAlignment="Top" Width="5"/>
+                    <GridSplitter x:Name="win1_status_groupbox_grid_separator3" HorizontalAlignment="Left" Height="84" Margin="438,0,0,0" VerticalAlignment="Top" Width="5"/>
+                    <Label x:Name="win1_status_groupbox_vehicleid_label" Content="Vehicle ID:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141"/>
+                    <Label x:Name="win1_status_groupbox_rating_label" Content="Rating:" HorizontalAlignment="Left" Height="26" Margin="156,0,0,0" VerticalAlignment="Top" Width="135"/>
+                    <Label x:Name="win1_status_groupbox_balance_label" Content="Balance:" HorizontalAlignment="Left" Height="26" Margin="302,0,0,0" VerticalAlignment="Top" Width="136"/>
+                    <Label x:Name="win1_status_groupbox_counter_label" Content="Counter:" HorizontalAlignment="Left" Height="26" Margin="448,0,0,0" VerticalAlignment="Top" Width="130"/>
+                    <TextBlock x:Name="win1_status_groupbox_vehicleid_textblock" HorizontalAlignment="Left" Height="48" Margin="10,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" FontSize="20" TextAlignment="Center"><Run Language="en-sg" Text="?"/></TextBlock>
+                    <TextBlock x:Name="win1_status_groupbox_rating_textblock" HorizontalAlignment="Left" Height="48" Margin="156,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" FontSize="20" TextAlignment="Center" TextDecorations="{x:Null}"><Run Language="en-sg" Text="0.0"/></TextBlock>
+                    <TextBlock x:Name="win1_status_groupbox_balance_value_textblock" HorizontalAlignment="Left" Height="29" Margin="302,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="131" FontSize="20" TextAlignment="Center"><Run Language="en-sg" Text="0"/></TextBlock>
+                    <Label x:Name="win1_status_groupbox_balance_units_label" Content="ETH" HorizontalAlignment="Left" Height="19" Margin="302,55,0,0" VerticalAlignment="Top" Width="131" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    <TextBlock x:Name="win1_status_groupbox_counter_value_textblock" HorizontalAlignment="Left" Height="29" Margin="448,26,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="130" FontSize="20" TextAlignment="Center"/>
+                    <Label x:Name="win1_status_groupbox_counter_units_label" Content="Second(s)" HorizontalAlignment="Left" Margin="448,55,0,0" VerticalAlignment="Top" Height="19" Width="130" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+        <Grid x:Name="win1_messagebox_grid" HorizontalAlignment="Left" Height="305" Margin="10,0,0,130" VerticalAlignment="Bottom" Width="614">
+            <TextBox x:Name="win1_messagebox_history_textbox" HorizontalAlignment="Left" Margin="10,10,0,86" TextWrapping="Wrap" Text="History" Width="594" VerticalScrollBarVisibility="Auto" IsReadOnly="True" IsUndoEnabled="False" FontSize="14"/>
+            <Border x:Name="win1_messagebox_current_border" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="47" Margin="10,0,0,30" VerticalAlignment="Bottom" Width="594" ScrollViewer.VerticalScrollBarVisibility="Disabled">
+                <TextBlock x:Name="win1_messagebox_current_textblock" HorizontalAlignment="Left" Margin="-0.8,-0.8,-0.2,0" TextWrapping="Wrap" Text="Current" VerticalAlignment="Center" Width="593" Padding="5,0" ScrollViewer.VerticalScrollBarVisibility="Disabled" FontSize="16"/>
+            </Border>
+            <ProgressBar x:Name="win1_messagebox_progressbar" HorizontalAlignment="Left" Height="15" Margin="10,280,0,0" VerticalAlignment="Top" Width="594" Visibility="Hidden"/>
+
+        </Grid>
+        <Grid x:Name="win1_current_grid" HorizontalAlignment="Left" Height="50" Margin="10,0,0,435.4" VerticalAlignment="Bottom" Width="614">
+            <Border x:Name="win1_current_border" BorderBrush="White" BorderThickness="1" HorizontalAlignment="Left" Height="29" Margin="10,11,0,0" VerticalAlignment="Top" Width="594">
+                <TextBlock x:Name="win1_current_textblock" HorizontalAlignment="Center" Height="29" Margin="-0.8,-0.8,-0.2,-1" TextWrapping="Wrap" Text="Current Job" VerticalAlignment="Top" Width="593" FontSize="20" Padding="5,0"/>
+            </Border>
+        </Grid>
+        <Grid x:Name="win1_status_other_grid" HorizontalAlignment="Center" Height="120" Margin="10,10,9.6,480.4" Width="614">
+            <GroupBox x:Name="win1_status_other_groupbox" Header="Peer's Status" HorizontalAlignment="Center" Height="100" Margin="10,0,10,10" VerticalAlignment="Bottom" Width="594">
+                <Grid x:Name="win1_status_other_groupbox_grid" HorizontalAlignment="Left" Height="84" Margin="0,0,-3.2,-5.6" VerticalAlignment="Top" Width="584">
+                    <GridSplitter x:Name="win1_status_other_groupbox_grid_separator1" HorizontalAlignment="Left" Height="84" Margin="194,0,0,0" VerticalAlignment="Top" Width="5"/>
+                    <GridSplitter x:Name="win1_status_other_groupbox_grid_separator2" HorizontalAlignment="Left" Height="84" Margin="389,0,0,0" VerticalAlignment="Top" Width="5"/>
+                    <Label x:Name="win1_status_other_groupbox_vehicleid_label" Content="Vehicle ID:" HorizontalAlignment="Left" VerticalAlignment="Top" Width="189"/>
+                    <Label x:Name="win1_status_other_groupbox_rating_label" Content="Rating:" HorizontalAlignment="Left" Height="26" Margin="204,0,0,0" VerticalAlignment="Top" Width="180"/>
+                    <Label x:Name="win1_status_other_groupbox_balance_label" Content="Balance:" HorizontalAlignment="Left" Height="26" Margin="399,0,0,0" VerticalAlignment="Top" Width="175"/>
+                    <TextBlock x:Name="win1_status_other_groupbox_vehicleid_textblock" HorizontalAlignment="Left" Height="48" Margin="0,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" FontSize="20" TextAlignment="Center"><Run Language="en-sg" Text="?"/></TextBlock>
+                    <TextBlock x:Name="win1_status_other_groupbox_rating_textblock" HorizontalAlignment="Left" Height="48" Margin="204,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" FontSize="20" TextAlignment="Center" TextDecorations="{x:Null}"><Run Language="en-sg" Text="0.0"/></TextBlock>
+                    <TextBlock x:Name="win1_status_other_groupbox_balance_value_textblock" HorizontalAlignment="Left" Height="29" Margin="399,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" FontSize="20" TextAlignment="Center"><Run Language="en-sg" Text="0"/></TextBlock>
+                    <Label x:Name="win1_status_other_groupbox_balance_units_label" Content="ETH" HorizontalAlignment="Left" Height="19" Margin="399,55,0,0" VerticalAlignment="Top" Width="175" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                </Grid>
+            </GroupBox>
+        </Grid>
+    </Grid>
+</Window>
