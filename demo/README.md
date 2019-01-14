@@ -35,7 +35,7 @@ Using `git` or your Git version control system:
 
 `git clone https://github.com/ANRGUSC/MOTIVE/`
 
-Alternatively, download the `*.zip` archive at `Clone or download > Download ZIP` on GitHub.com and decompress it.
+Alternatively, download the `*.zip` archive at `Clone or download > Download ZIP` from GitHub.com repo and decompress it.
 
 Do not move or remove `app.exe`, `/node_modules` and its subdirectory contents.
 
@@ -73,7 +73,7 @@ Error: Cannot find module './build/Release/scrypt'
 ...
 ```
 
-`node_modules` or its subdirectory contents is moved or removed. Please clone or download the repository again.
+`node_modules` or its subdirectory contents moved or removed. Please clone or download the repository again.
 
 ```
 ...
